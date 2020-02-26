@@ -13,13 +13,75 @@ import java.time.LocalDate;
  */
 public class Employee {
 
+    public Employee(String firstName, String lastName, String ssn){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.ssn = ssn;
+    }
+
     public String firstName;
     public String lastName;
-    public String ssn;
+    private String ssn;
     public boolean metWithHr;
     public boolean metDeptStaff;
     public boolean reviewedDeptPolicies;
     public boolean movedIn;
     public String cubeId;
     public LocalDate orientationDate;
+
+    public void setMetWithHr(boolean metWithHr) {
+        this.metWithHr = metWithHr;
+    }
+
+    public void setMetDeptStaff(boolean metDeptStaff) {
+        this.metDeptStaff = metDeptStaff;
+    }
+
+    public void setReviewedDeptPolicies(boolean reviewedDeptPolicies) {
+        this.reviewedDeptPolicies = reviewedDeptPolicies;
+    }
+
+    public void setMovedIn(boolean movedIn) {
+        this.movedIn = movedIn;
+    }
+
+    public void setCubeId(String cubeId) {
+        this.cubeId = cubeId;
+    }
+
+    public void setOrientationDate(LocalDate orientationDate) {
+        this.orientationDate = orientationDate;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public boolean isMetWithHr() {
+        return metWithHr;
+    }
+
+    public boolean isMetDeptStaff() {
+        return metDeptStaff;
+    }
+
+    public boolean isReviewedDeptPolicies() {
+        return reviewedDeptPolicies;
+    }
+
+    public boolean isMovedIn() {
+        return movedIn;
+    }
+
+    public String getCubeId() {
+        return cubeId;
+    }
+
+    public LocalDate getOrientationDate() {
+        return orientationDate;
+    }
 }
