@@ -2,11 +2,12 @@ package edu.wctc.lab4;
 
 public class Company {
 
-    public void hireEmployee(String firstName, String lastName, String ssn){
-        Employee employee = new Employee(firstName, lastName, ssn);
+    public Company() {
+        Manager hiringmanager = new Manager();
+        hiringmanager.hireEmployee("Peter", "Piper", "333-33-3333");
 
-        employee.doFirstTimeOrientation("A101");
-        employee.printReport();
+        hiringmanager.arrageOrientation();
+        hiringmanager.getReport();
     }
 
 }
